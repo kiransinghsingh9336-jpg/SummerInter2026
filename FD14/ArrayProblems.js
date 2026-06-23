@@ -4,7 +4,7 @@ for(i=3;i>=0;i--){
     console.log(Singer[i]);
 }
 
-//for(i=0;i<=2;i++){
-   // console.log(Singer[i]);
-//}
+for(i=0;i<=2;i++){
+    console.log(Singer[i]);
+}
 
