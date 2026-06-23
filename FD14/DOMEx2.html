@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example2</title>
+</head>
+<body>
+    <h1 id="msg">Hello</h1>
+     <button onclick="changeText()">Click Here</button>
+
+     <script>
+    function changeText() {
+        document.getElementById("msg").innerHTML = "JavaScript";
+        document.getElementById("msg").style.color = "red";
+        document.getElementById("msg").FontSize = "50px";
+        document.getElementById("msg").style.background = "blue";
+     }
+
+    </script>
+</body>
+</html>
