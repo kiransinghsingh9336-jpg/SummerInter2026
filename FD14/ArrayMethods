@@ -1,0 +1,30 @@
+//Array Method
+let Number = [10,20,30,40,50,60]
+//push(insert element in the last)
+Number.push(70)
+console.log(Number);
+
+//unshift(to insert the element in the first)
+Number.unshift(0)
+console.log(Number);
+
+//pop(delete elememt from the last)
+Number.pop()
+console.log(Number);
+
+//shift(delete elememt from the first)
+Number.shift()
+console.log(Number);
+
+//includes(to check element are present or not)
+res=Number.includes(100)
+res2=Number.includes(30)
+console.log(res);
+console.log(res2);
+
+//IndexOf(find index of element)
+Find = Number.indexOf(30)
+console.log(Find);
+
+
+
