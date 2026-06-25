@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Welcome to my website</h1>
+
+    <div style="border: 2px solid black;background-color: darksalmon;">
+        <h3 id="Quote"style="text-align:center"></h3>
+    </div>
+
+    <div style="display:flex;justify-content:center; height: 100vh;align-items: center;">
+        <button style="padding: 20px" onclick="generator()">change Color</button>
+    </div>
+
+    <script>
+        let Quote = ["blue",
+        "Success doesn’t come to you, you go to it.",
+        "Small steps every day lead to big results",
+        "Believe in yourself and anything is possible."]
+        function generator(){
+            let heading=document.querySelector("#Quote");
+            let random=Math.floor(Math.random()*(Quote.length))
+           // body.style.background=color[random]
+           heading.innerHTML=Quote[random]
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+  
+</head>
+<body>
+    <div class="Calculator">
+        <h2>Calculator</h2>
+        <label><input type="text" id="display" disabled>
+        <div class="butons">
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="appendValue('/')">/</button>
+    <button onclick="appendValue('*')">*</button>
+    <button onclick="deleteLast()">DEL</button>
+
+    <button onclick="appendValue('5')">/</button>
+    <button onclick="appendValue('8')">/</button>
+    <button onclick="appendValue('10')">*</button>
+    <button onclick="calculator('+')">+</button>
+
+    <button onclick="appendValue('5')">/</button>
+    <button onclick="appendValue('8')">/</button>
+    <button onclick="appendValue('10')">*</button>
+    <button onclick="calculator('-')">-</button>
+
+     <button onclick="appendValue('5')">/</button>
+    <button onclick="appendValue('8')">/</button>
+    <button onclick="appendValue('10')">*</button>
+    <button onclick="calculator()">=</button>
+
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+        </div>
+    </div>
+    <script>
+        let display=document.getElementById("display");
+        function appendValue(value){
+            display.value += value;
+        }
+        function clearDisplay(){
+            display.value ="";
+        }
+        function deleteLast(){
+            display.value = display.value.slice(0,-1);
+        }
+        function calculator(){
+             try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "Error";
+  }
+        }
+    </script>
+    
+</body>
+</html>
