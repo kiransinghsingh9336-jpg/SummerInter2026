@@ -1,4 +1,4 @@
-//synchronous -> It execute processes in orderd way
+//Asynchronous -> It execute processes in unorderd way
 // making maggi
 
 function starting(){
