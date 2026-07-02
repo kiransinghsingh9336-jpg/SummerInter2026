@@ -15,7 +15,7 @@ console.log(Fruits);
 
  //Q4. Array se ek element remove karo
 //Array ka last element remove karo aur updated array print karo.
-Fruits.shift();
+Fruits.pop();
 console.log(Fruits);
 
 
